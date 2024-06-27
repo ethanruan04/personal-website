@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4918b48403.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="ethan.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+            <p>Student at Georgia Institute of Technology</p>
+            <h1>Welcome, I'm <span>Ethan Ruan</span><br>from Atlanta, Georgia</h1>
+        </div>
+        <img src="body.jpg" class="new-photo">
+    </div>
+</div>
+
+<!--------------------about section-------------->
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="headshot.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi! My name is Ethan Ruan a second year computer science major with a minor in FinTech. I
+                am interested in bridging my knowledge in CS and Technology with finance and the business world.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('accolades')">Accolades</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('interests')">Interests</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="accolades">
+                    <ul>
+                        <li class="first-li"><span>Aug 2023-Present</span><br>Zell Miller Scholarship</li>
+                        <li><span>Jan 2024-May 2024</span><br>Georgia Tech Facualty Honors</li>
+                        <li><span>Aug 2023-Present</span><br>Georgia Tech Dean's List</li>
+                        <li><span>Jan 2021-Jan 2022</span><br>US Table Tennis Junior National Team Member</li>
+                        <li><span>Jan 2019-Jan 2020</span><br>US Table Tennis Cadet All-American</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Aug 2023-Current</span><br>Obtaining a Bachelor of Science in Computer Science at Georgia Tech</li>
+                        <li><span>Aug 2019-May 2023</span><br>Milton High School</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="interests">
+                    <ul>
+                        <li>Golf, Formula 1, Weightlifting, Travel</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------experience---------------- -->
+<div id="Experience">
+    <div class="container">
+        <h1 class="sub-title"> Experience</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <h2>Researcher</h2>
+                <p> Georgia Tech VIP Program- ML for Financial Markets</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-people-arrows"></i>
+                <h2>Pro Bono Project Consultant</h2>
+                <p> Georgia Tech Undergraduate Consulting Club</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-briefcase"></i>
+                <h2>Market Analysis Intern</h2>
+                <p> Repertoire Partners</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------portfolio ---------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class ="subtitle">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="appHP.png" alt="Work Sample">
+                <div class="layer">
+                    <h3>Explore page</h3>
+                    <p>Our main page provides users with access to their Spotify Wrapped information, offering insights into their music listening habits for the year. Users can also revisit past Wrapped details to see how their tastes have evolved over time. Additionally, the page features various app fragments that allow users to explore different functionalities and enhance their music experience.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="appMP.png" alt="Work Sample">
+                <div class="layer">
+                    <h3>Homepage</h3>
+                    <p>The main page where users access their Spotify Wrapped information, past Wrapped details, and the app's different fragments.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="appSET.png" alt="Work Sample">
+                <div class="layer">
+                    <h3>Settings</h3>
+                    <p>On our settings page, users can create personal accounts via Firebase. Once registered, users can log in and connect their Spotify accounts to seamlessly integrate with the Spotify API. This connection allows users to access their favorite playlists, explore new music, and enhance their overall experience on our platform.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+
+<!-------------------------------------------------contact----------------------->
+<div id="contact">
+    <div class="container">
+        <div class='row'>
+            <div class="contact-left">
+                <h1 class="'sub-title">Contact Me</h1>
+                <p>ethanruanj@gmail.com</p>
+                <p>470-338-1787</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/ethan-ruan-6b1197236/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/ethanruan_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-solid fa-file"></i></a>
+                </div>
+                <a href="resume/resume1.pdf" download class="btn btn2" class="btn btn2">Download Resume</a>
+
+            </div>
+            <div class="contact-right">
+                <form name='submit-to-google-sheet'>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Ethan. Learned from Easy Tutorials. </p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbxYdRZWWsWT5Zfmdm94Kv7SuPnmTMIVa2DC05AtorBdYXJpGRrehkJ4__JyS5R0pahW/exec>'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
