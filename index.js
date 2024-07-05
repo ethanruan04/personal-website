@@ -9,7 +9,7 @@ const port = 3000; // Port on which your server will run
 
 // MySQL Connection Pool
 const pool = mysql.createPool({
-    host: '127.0.0.1', // MySQL host
+    host: '192.168.98.53', // MySQL host
     user: 'root', // MySQL username
     password: '3275', // MySQL password
     database: 'contactForm', // Database name
