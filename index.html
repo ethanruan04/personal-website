@@ -54,11 +54,10 @@
                 <div class="tab-contents active-tab" id="accolades">
                     <ul>
                         <li class="first-li"><span>Aug 2023-Present</span><br>Zell Miller Scholarship</li>
-                        <li><span>Jan 2024-May 2024</span><br>Georgia Tech Facualty Honors</li>
+                        <li><span>Jan 2024-May 2024</span><br>Georgia Tech Faculty Honors</li>
                         <li><span>Aug 2023-Present</span><br>Georgia Tech Dean's List</li>
                         <li><span>Jan 2021-Jan 2022</span><br>US Table Tennis Junior National Team Member</li>
                         <li><span>Jan 2019-Jan 2020</span><br>US Table Tennis Cadet All-American</li>
-
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
@@ -138,8 +137,6 @@
     </div>
 </div>
 
-
-
 <!-------------------------------------------------contact----------------------->
 <div id="contact">
     <div class="container">
@@ -154,28 +151,21 @@
                     <a href=""><i class="fa-solid fa-file"></i></a>
                 </div>
                 <a href="resume1.pdf" download class="btn btn2" class="btn btn2">Download Resume</a>
-
             </div>
             <div class="contact-right">
-                <form name='submit-to-google-sheet'>
+                <form action="http://localhost:3000/submit-form" method="POST">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
             </div>
-    </div>
-    <div class="copyright">
-        <p>Copyright @ Ethan. Learned from Easy Tutorials. </p>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Ethan. Learned from Easy Tutorials. </p>
+        </div>
     </div>
 </div>
-
-
-
-
-
-
-
 
 <script>
     var tablinks = document.getElementsByClassName("tab-links");
@@ -191,9 +181,7 @@
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
     }
-</script>
 
-<script>
     var sidemenu = document.getElementById("sidemenu");
 
     function openmenu(){
@@ -202,18 +190,7 @@
     function closemenu(){
         sidemenu.style.right = "-200px";
     }
-
 </script>
-<script>
-    const scriptURL = '<https://script.google.com/macros/s/AKfycbxYdRZWWsWT5Zfmdm94Kv7SuPnmTMIVa2DC05AtorBdYXJpGRrehkJ4__JyS5R0pahW/exec>'
-    const form = document.forms['submit-to-google-sheet']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+
 </body>
 </html>
