@@ -1,0 +1,21 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "Hi. I hope you enjoy my website. To be clear I did follow a tutorial however I made individual changes and customizations that allowed me to learn both HTML and CSS. \r The website is not fully complete as some of the active tabs are not finished but I will have that done in the coming week.\r Lastly, one final task to complete with this website involves me using what I've in my SQL/Databases class. This involves me using Node JS to combine MySQL with the HTML. By doing this, I am able to implement my own database that collects and stores visitors' information instead of merely attaching a google sheets. Again, this task is to utilize what I have learned in class as well as expand upon my knowledge and skills that will carry over to later projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.10.2",
+    "prohairesis": "^1.2.5"
+  }
+}
